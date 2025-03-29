@@ -35,3 +35,14 @@ main {
     align-items: center;
     height: 50vh;
 }
+
+#blog {
+    display: flex;
+     flex-direction: column;
+    background-color: purple;
+}
+
+#mrm {
+    background-image: url("quote.jpg");
+    width: 80%;
+}

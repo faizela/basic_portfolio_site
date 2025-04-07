@@ -1,3 +1,14 @@
+body {
+    background-color: #1b1b1b;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
 ul {
     display: flex;
     justify-content: space-around;
@@ -10,6 +21,17 @@ ul {
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
+    
+
+}
+
+#name {
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    margin: auto;
 }
 
 li {
@@ -18,31 +40,262 @@ li {
 }
 
 li a {
+    
     text-decoration: none;
+    
 }
 
 a:visited {
-    color: black;
+    color: white
 }
 
 a:hover {
     color:blueviolet;
 }
 
-main {
+main, #portfolio {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh;
 }
 
+
+.profile-picture {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+   
+    
+    
+}
+
+
+
+#about h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-right: 4em;
+   font-family: "space-mono", sans-serif;
+    font-weight: 40;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+
 #blog {
     display: flex;
      flex-direction: column;
-    background-color: purple;
+   
 }
+#blog h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-left: 1em;
+    font-family: "space-mono", sans-serif;
+    font-weight: 40;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;}
 
-#mrm {
-    background-image: url("quote.jpg");
-    width: 80%;
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+    }
+
+
+
+ 
+
+    #name {
+        margin-left: -2em;
+    }
+
+
+     
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+
+   
+
+    #portfolio {
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+
+    }
+
+    #portfolio h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        margin-left: 1em;
+        font-family: "space-mono", sans-serif;
+        font-weight: 40;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+    }
+
+    #blog {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 230vh;
+    }
+
+    #blog h1 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        margin-left: 0.25em;
+        font-family: "space-mono", sans-serif;
+        font-weight: 40;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+    }
+
+     .blog_nav {
+        margin-bottom: 1em;
+     }
+
+    
+    #blog p {
+        margin-top: 1em;
+        margin-left: 1em;
+        font-family: "space-mono", sans-serif;
+     
+    }
+
+    #blog_posts {
+        margin-left: 0.75em;
+        font-family: "space-mono", sans-serif
+    }
+
+
+    
+    
+ }
+
+ 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px)  {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:80vh;
+    }
+
+    .profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+        margin-left: em;
+    }
+
+    main h1 {
+        display: flex;
+    }
+
+    #name {
+        margin-left: -2em;
+    }
+
+    #info  {
+        margin-right: 3em;
+    }
+    #portfolio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        margin-right: 3em;
+    }
+    
+
+
+    #blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+      }
+
+  } 
+
+ 
+ /* working on medium devices  this is for you future faisal  */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .profile-picture {
+        
+        border-radius: 50%;
+        margin-left: 8em;
+     
+        
+    }
+
+    main h1 {
+        margin-left: 2em;
+    }
+
+    #name {
+        margin-left: -2em;
+    }
+
+    #info  {
+        margin-left: 5em;
+    }
+    
+    #portfolio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        margin-right: 3em;
+    }
 }
+ 
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+ 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...}  */
+
+/* 
+
+fix portfolio section to be ren/sponsive
+
+*/
